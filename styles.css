@@ -27,9 +27,7 @@ a{
 .container{
     width: 100%;
 }
-.large{
-   display: none;
-}
+
 .header{
     padding: 1rem;
     display: flex;
@@ -40,6 +38,7 @@ a{
 }
 .header-icons{
     color: var(--dark-grayish-blue);
+    align-self: flex-end;
 }
 .header h1{
     font-weight: 700;
@@ -47,18 +46,19 @@ a{
 .header-left{
     display: flex;
     gap: 1rem;
-    align-items: center;
 }
 .header-right{
     display: flex;
     gap: 1rem;
-    align-items: center;
 }
 .nav{
     display: flex;
     list-style: none;
-    align-items: center;
     gap: 1rem;
+}
+.nav-wrapper {
+    display: none;
+    align-items: center;
 }
 .nav-link{
     color: var(--grayish-blue);
@@ -70,4 +70,12 @@ a{
 .profile img{
     width: 100%;
     
+}
+
+@media (min-width: 1000px) {
+
+     .nav-wrapper {
+        display: flex;
+        align-items: center;
+    }
 }
