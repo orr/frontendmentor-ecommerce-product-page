@@ -13,6 +13,26 @@
 </head>
 <body>
   <div id="blackout" ></div>
+  <div id="cart" class="cart displayNone">
+    <div class="cart-top">
+      <div class="cart-title">
+        <h1>Cart</h1>
+      </div>
+    </div>
+    <div class="cart-content">
+      <div class="cart-items">
+        <div class="cart-item">
+          <div class="cart-item-image"><img src="/images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="cart-item-desc">
+            <span class="cart-item-name">Fall Limited Edition Sneakers</span>
+            <span>$125.00 x 3 <strong>$375.00</strong></span>
+          </div>
+          <i class="material-icons">delete</i>
+        </div>
+      </div>
+      <button class="btn-add">Checkout</button>
+    </div>
+  </div>
   <div class="header-container">
     <header class="header">
       <div class="header-left">
@@ -30,7 +50,7 @@
          </nav>
       </div>
       <div class="header-right">
-        <div class="header-icons"><i class="material-icons">shopping_cart</i></div> <div class="profile"><img src="images/image-avatar.png" alt="avatar image"></div>
+        <div class="header-icons"><a href="#" id="cart-button"><i class="material-icons">shopping_cart</i></a></div> <div class="profile"><img src="images/image-avatar.png" alt="avatar image"></div>
       </div>
     </header>
   </div>
